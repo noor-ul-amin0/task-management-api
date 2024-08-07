@@ -1,6 +1,7 @@
 from typing import List, Optional
-from models.task import Task
-from utils.utils import generate_id, get_current_date
+from app.models.task import Task
+from app.utils.utils import generate_id, get_current_date
+
 
 class TaskManager:
     def __init__(self):
