@@ -8,7 +8,7 @@ task_manager = TaskManager()
 
 
 @router.get("/")
-def read_tasks():
+def read_tasks(query: str | None = None):
     return {"success": True, "data": task_manager.get_tasks()}
 
 
